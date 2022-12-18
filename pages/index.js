@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Bottom from './components/landing-page/bottom';
 import CenterEle from './components/landing-page/center';
 import Introduction from './components/landing-page/introduction';
 import Navbar from './components/Navbar'
@@ -24,6 +25,9 @@ export default function Home() {
         </div>
         <div className="my-8">
           <CenterEle />
+        </div>
+        <div className="my-8">
+          <Bottom/>
         </div>
       </main>
 
