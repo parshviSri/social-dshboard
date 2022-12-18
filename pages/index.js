@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import CenterEle from './components/landing-page/center';
 import Introduction from './components/landing-page/introduction';
 import Navbar from './components/Navbar'
 
 export default function Home() {
   return (
-    <div className="bg-[#D1BAFE]">
+    <div className="bg-black text-white">
       <Head>
         <title>Social Dshboard</title>
         <meta
@@ -18,8 +19,11 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <div className='my-8'>
+        <div className="my-8">
           <Introduction />
+        </div>
+        <div className="my-8">
+          <CenterEle />
         </div>
       </main>
 
