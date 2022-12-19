@@ -13,6 +13,8 @@
     "@react-three/fiber": "8.8",
     "@react-three/rapier": "0.11.1",
     "@react-three/cannon": "6.3.0",
+    "@react-three/postprocessing": "2.0.5",
+    "drei": "2.2.21",
     "lamina": "1.0.1",
     "next": "13.0.7",
     "react": "18.2.0",

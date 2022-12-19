@@ -1,4 +1,5 @@
 import React from 'react';
+import TopElement from './top';
 
 const Introduction = () => {
     return (
@@ -10,7 +11,7 @@ const Introduction = () => {
           </p>
         </div>
         <div className="basis-1/2">
-          
+          <TopElement/>
         </div>
       </div>
     );
