@@ -10,10 +10,10 @@ const MiddleLayers = () => {
       colorB: "#ff8f00" ,
     };
   return (
-    <div className="h-full">
+    <div className="h-4/6">
       <Canvas
         dpr={[1, 2]}
-        camera={{ position: [0, -0.75, 0.75], fov: 80, near: 0.001 }}
+        camera={{ position: [0, -0.75, 1.75], fov: 80, near: 0.001 }}
       >
         <Flower {...props} />
         <mesh>
