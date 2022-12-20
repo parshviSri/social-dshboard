@@ -9,7 +9,7 @@ import Navbar from './components/Navbar'
 
 export default function Home() {
   return (
-    <div className="bg-black text-white">
+    <div>
       <Head>
         <title>Social Dshboard</title>
         <meta

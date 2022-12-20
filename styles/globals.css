@@ -4,6 +4,7 @@
 
 #root {
   filter: saturate(1.15) hue-rotate(345deg);
+  
 }
 
 #root * {
@@ -29,4 +30,8 @@ canvas {
 
 canvas:active {
   cursor: grabbing;
+}
+#root,body{
+  background-color:black;
+  color: white;
 }
