@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Contact from './components/Contact';
 import Bottom from './components/landing-page/bottom';
 import CenterEle from './components/landing-page/center';
 import Introduction from './components/landing-page/introduction';
@@ -31,7 +32,9 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        <Contact/>
+      </footer>
     </div>
   );
 }

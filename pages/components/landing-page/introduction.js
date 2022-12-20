@@ -10,7 +10,7 @@ const Introduction = () => {
             One place for all the social media handles.
           </p>
         </div>
-        <div className="basis-1/2">
+        <div className="basis-1/2 h-5/6">
           <TopElement/>
         </div>
       </div>
