@@ -35,4 +35,3 @@ The social media dashboard is designed to meet the needs of all users, from casu
 • Security features to protect user data
 • A mobile-friendly design for on-the-go access
 
-Thinking about Web2
