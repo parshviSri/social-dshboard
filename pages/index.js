@@ -20,7 +20,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <Navbar />
         <div className="my-8">
           <Introduction />
         </div>
@@ -32,9 +31,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <Contact/>
-      </footer>
+     
     </div>
   );
 }
