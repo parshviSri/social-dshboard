@@ -1,17 +1,20 @@
-import React from 'react';
+import React,{useState} from 'react';
 import BubblesScene from './components/landing-page/dashboard/bubbles';
 import LensDashboard from './components/landing-page/dashboard/lens-dashboard/lens-dashboard';
-import {LoginElement} from './components/landing-page/dashboard/login';
+import LoginElement from './components/landing-page/dashboard/login';
 import Modal from './components/landing-page/dashboard/modal';
-
-const Dashboard = () => {
+import {connect } from 'react-redux';
+export const Dashboard = (props) => {
+    const {mediaType} = props
     return (
         <div className='h-screen'>
            <BubblesScene/>
-           {/* <Modal><LoginElement/></Modal> */}
-           <LensDashboard/>
+           {mediaType?.length>0?<LensDashboard/>:<Modal><LoginElement/></Modal> }
+           
         </div>
     );
 }
-
-export default Dashboard;
+const mapStateToProps = (state) => ({
+  mediaType: state.reducer?.mediaTypeSlice?.mediaType,
+});
+export default connect(mapStateToProps)(Dashboard)

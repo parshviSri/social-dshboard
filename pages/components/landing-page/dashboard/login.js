@@ -1,11 +1,10 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useDispatch } from "react-redux";
 import * as actions from '../../../../state/action-creator';
-export const LoginElement = (prop) => {
-    const {setmediaType} = prop;
-    console.log(prop);
+ const LoginElement = () => {
+    const dispatch = useDispatch();
     const updateMediaType =(type) =>{
-      setmediaType(web3)
+      dispatch(actions.setmediaType(type));
     }
     return (
       <div className="flex justify-center m-6">
@@ -26,9 +25,5 @@ export const LoginElement = (prop) => {
       </div>
     );
 }
-export default connect((st) => ({
-  st: st
-}), {
-  setmediaType: actions.setmediaType
-})(LoginElement);
+export default LoginElement
 
