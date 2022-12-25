@@ -1,4 +1,5 @@
 export const ipfsUrl =(url) =>{
+    console.log(url);
     if(url?.includes('://')){
         if( url.includes('ipfs')){
             const spliturl = url?.split("://");
