@@ -12,12 +12,12 @@ export const Dashboard = (props) => {
         {mediaType?.length > 0 ? (
           <LensDashboard />
         ) : (
-          <div>
+          <>
             <BubblesScene />
             <Modal>
               <LoginElement />
             </Modal>
-          </div>
+          </>
         )}
       </div>
     );

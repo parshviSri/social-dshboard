@@ -25,7 +25,8 @@
     "react-redux": "^8.0.5",
     "redux": "^4.2.0",
     "three": "^0.145.0",
-    "wagmi": "^0.9.5"
+    "wagmi": "^0.9.5",
+    "graphql": "^16.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

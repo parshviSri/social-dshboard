@@ -6,9 +6,8 @@ import Contact from './components/Contact';
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={configureStore}>
-          <Navbar />
+          <Navbar/>
           <Component {...pageProps} />
-          <Contact />
     </Provider>
   );
 }
