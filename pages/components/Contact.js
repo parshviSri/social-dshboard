@@ -21,7 +21,12 @@ const Contact = () => {
             >
               Github
             </a>
-            <a href="" className="px-2" target="_blank" rel="noreferrer">
+            <a
+              href="https://qpxaa35qo8d.typeform.com/to/PwpLoXky"
+              className="px-2"
+              target="_blank"
+              rel="noreferrer"
+            >
               Feedback
             </a>
           </div>
