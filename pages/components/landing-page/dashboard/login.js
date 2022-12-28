@@ -9,7 +9,7 @@ import { getFollowers } from "../../../api/followers/getFollowers";
 import { getFollowings } from "../../../api/followings/getFollowings";
 import { getNotification } from "../../../api/notifications/getNotification";
 import { getPendingFollowerRequest } from "../../../api/followers/getPendingFollowerRequest";
-import { getNFTCollection } from "../../../api/nft-collections/getNFTcollections";
+import { getFeeds } from "../../../api/feed/getFeed";
 import { getOnChainId } from "../../../api/onchain/getOnChainIdentity";
 const LoginElement = () => {
   const dispatch = useDispatch();
@@ -33,6 +33,8 @@ const LoginElement = () => {
     // dispatch(actions.getNFTCollection(nftCollection));
     const onchainId = await getOnChainId(profile.id);
     dispatch(actions.getOnChainId(onchainId));
+    const feeds  = await getFeeds(profile.id);
+    dispatch(actions.getFeeds(feeds))
     dispatch(actions.setmediaType(type));
   };
   return (

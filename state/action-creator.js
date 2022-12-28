@@ -61,3 +61,7 @@ export const setmediaType = (type) => {
   const payload = type;
   return { type: types.MEDIA_TYPES, payload };
 };
+export const getFeeds = (type) => {
+  const payload = type;
+  return { type: types.GET_FEEDS, payload };
+};
