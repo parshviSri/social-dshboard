@@ -10,7 +10,9 @@ const Profile = () => {
         <div className="basis-1/3">
           <Notifications />
         </div>
-        <div className="basis-1/6"></div>
+        <div className="basis-1/3">
+          
+        </div>
       </div>
     );
 }
