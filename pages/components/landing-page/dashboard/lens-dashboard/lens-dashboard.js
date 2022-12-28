@@ -6,7 +6,6 @@ import{ipfsUrl} from '../../../../../utils/ipfs-url';
 import {useSelector} from 'react-redux';
  const LensDashboard = (props) => {
     const user = useSelector((st) => st?.reducer?.profileSlice?.userProfile);
-    console.log(user);
   const coverurl = ipfsUrl(user?.coverPicture?.original?.url);
   const profileurl = ipfsUrl(user?.picture);
   const name = user?.name;

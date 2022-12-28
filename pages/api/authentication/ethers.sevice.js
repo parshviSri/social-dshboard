@@ -23,10 +23,8 @@ export const signText = (text) => {
   return getSigner().signMessage(text);
 };
 export const getAddress = async(name) =>{
-  console.log(name);
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const address =  provider.getBalance(name);
-  console.log(address);
   return address
 }
 
