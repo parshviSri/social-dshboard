@@ -11,7 +11,6 @@ const Profile = () => {
           <Notifications />
         </div>
         <div className="basis-1/3">
-          
         </div>
       </div>
     );
