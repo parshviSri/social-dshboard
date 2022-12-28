@@ -5,7 +5,6 @@ import LoginElement from './components/landing-page/dashboard/login';
 import Modal from './components/landing-page/dashboard/modal';
 import {connect } from 'react-redux';
 export const Dashboard = (props) => {
-  console.log(props);
     const {mediaType} = props
     return (
       <div className="h-screen">
