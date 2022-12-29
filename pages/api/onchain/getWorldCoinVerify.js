@@ -15,7 +15,6 @@ export const getworldCoinVerification = async (proof,nullifier_hash,merkle_root)
   const data = axios
     .post("https://livepeer.studio/api/stream", body, config)
     .then((res) => {
-      console.log(res.data);
       return res.data;
     });
   return data;

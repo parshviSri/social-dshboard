@@ -2,9 +2,10 @@ import React,{useState} from 'react';
 import NotificationCard from './notification-card';
 import { useSelector } from 'react-redux';
 import RecentPublications from './publications/recent-publications';
+import RecentFeeds from './feeds/recent-feeds';
 const tabs =['Notifications','Publications','Feed']
 const Notifications = () => {
-  const [currentTab, setcurrentTab] = useState("Notifications");
+  const [currentTab, setcurrentTab] = useState("Feeds");
   const notifications = useSelector(st => st.reducer?.notificationsSlice?.result);
 
   const  items  = notifications?.items;
@@ -17,11 +18,11 @@ const Notifications = () => {
           <div>
             <button
               className="text-4xl p-2 "
-              onClick={() => handleChangeTab("Notifications")}
+              onClick={() => handleChangeTab("Feeds")}
             >
-              Notifications
+              Feeds
             </button>
-            {currentTab === "Notifications" && (
+            {currentTab === "Feeds" && (
               <p className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-[2px]"></p>
             )}
           </div>
@@ -39,11 +40,11 @@ const Notifications = () => {
           <div>
             <button
               className="text-4xl p-2"
-              onClick={() => handleChangeTab("Feed")}
+              onClick={() => handleChangeTab("Notifications")}
             >
-              Feed
+              Notifications
             </button>
-            {currentTab === "Feed" && (
+            {currentTab === "Notifications" && (
               <p className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-[2px]"></p>
             )}
           </div>
@@ -63,6 +64,7 @@ const Notifications = () => {
           </div>
         )}
         {currentTab === "Publications" && <RecentPublications />}
+        {currentTab==="Feeds" && <RecentFeeds/>}
       </>
     );
 }
