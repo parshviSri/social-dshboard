@@ -133,11 +133,11 @@ export const mediaTypeSlice=(state = initialType,action)=>{
             return state
     }
 }
-const initialFeed = {feeds:null};
+const initialFeed = null;
 export const feedsSlice = (state = initialFeed, action) => {
   switch (action.type) {
     case types.GET_FEEDS:
-      return { ...state, ["feeds"]: action.payload };
+      return action.payload;
     default:
       return state;
   }
