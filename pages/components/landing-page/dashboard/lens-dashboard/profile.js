@@ -1,5 +1,6 @@
 import React from 'react';
 import Notifications from './notifications';
+import Recommended from './recommendation/recommended';
 import Stats from './stats';
 const Profile = () => {
     return (
@@ -11,6 +12,7 @@ const Profile = () => {
           <Notifications />
         </div>
         <div className="basis-1/3">
+          <Recommended/>
         </div>
       </div>
     );

@@ -65,3 +65,7 @@ export const getFeeds = (type) => {
   const payload = type;
   return { type: types.GET_FEEDS, payload };
 };
+export const gettrendingProfile = (profiles) => {
+  const payload = profiles;
+  return { type: types.EXPLORE_PROFILE, payload };
+};

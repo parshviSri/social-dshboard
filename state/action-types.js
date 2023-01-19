@@ -16,3 +16,5 @@ export const GET_POPUP_STATE = "GET_POPUP_STATE";
 export const GET_LIVE_STREAM_DATA = "GET_LIVE_STREAM_DATA";
 export const GET_ON_CHAIN_ID = "GET_ON_CHAIN_ID";
 export const GET_FEEDS = "GET_FEEDS";
+// explore
+export const EXPLORE_PROFILE = "EXPLORE_PROFILE";

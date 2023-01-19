@@ -11,6 +11,7 @@ import { getNotification } from "../../../api/notifications/getNotification";
 import { getPendingFollowerRequest } from "../../../api/followers/getPendingFollowerRequest";
 import { getFeeds } from "../../../api/feed/getFeed";
 import { getOnChainId } from "../../../api/onchain/getOnChainIdentity";
+import { exploreProfiles } from "../../../api/recommended/recommendedprofile";
 const LoginElement = () => {
   const dispatch = useDispatch();
   const updateMediaType = async (type) => {
@@ -36,6 +37,9 @@ const LoginElement = () => {
     const feeds  = await getFeeds(profile.id);
     dispatch(actions.getFeeds(feeds))
     dispatch(actions.setmediaType(type));
+    const exploreProfile = await exploreProfiles();
+    console.log();
+    dispatch(actions.gettrendingProfile(exploreProfile));
   };
   return (
     <div className="flex justify-center m-6">

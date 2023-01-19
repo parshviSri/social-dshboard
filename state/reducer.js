@@ -142,6 +142,15 @@ export const feedsSlice = (state = initialFeed, action) => {
       return state;
   }
 };
+const initialTrendingProfiles = null;
+export const trendingProfilesSlice = (state = initialTrendingProfiles,action)=>{
+  switch(action.type){
+    case types.EXPLORE_PROFILE:
+      return action.payload;
+    default:
+      return state
+  }
+}
 const combinedReducer = combineReducers({
   mediaTypeSlice,
   accountSlice,
@@ -156,5 +165,6 @@ const combinedReducer = combineReducers({
   liveStreamSlice,
   onChainIdSlice,
   feedsSlice,
+  trendingProfilesSlice
 });
 export default combinedReducer;
