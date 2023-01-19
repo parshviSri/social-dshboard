@@ -4,13 +4,13 @@ import React from 'react';
   const {cover,profile,name,bio} = props;
     return (
       <div className="w-4/5">
-        <div className="relative  bg-gradient-to-r p-[6px] from-[#6EE7B7] via-[#3bf686] to-[#24351b]">
+        <div className=" bg-gradient-to-r p-[6px] from-[#6EE7B7] via-[#3bf686] to-[#24351b]">
           <img
             src={cover}
             alt="profile-banner"
             className="object-cover h-48 w-full"
           />
-          <div className="flex absolute left-4 top-28 ">
+          <div className="flex left-4 top-28 ">
             <img
               src={profile}
               alt="profile-image"

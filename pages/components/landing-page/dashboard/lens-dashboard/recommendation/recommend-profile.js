@@ -13,7 +13,6 @@ const RecommendProfile = () => {
       <div >
         {profiles && profiles.slice(0,5).map((profs) => {
             const profileImage = ipfsUrl(profs?.picture?.original?.url);
-            console.log(profileImage);
           return (
             <div key={profs.id} className=" flex border mt-2 rounded-lg border-white">
                 <div className='basis-1/3'>

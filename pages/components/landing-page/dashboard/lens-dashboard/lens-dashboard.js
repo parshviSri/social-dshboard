@@ -13,7 +13,7 @@ import {useSelector} from 'react-redux';
 
   
     return (
-      <div className="backdrop-blur-lg  top-[10%] left-[10%] w-full h-full">
+      <div className="w-full h-full">
         <div className='m-2'>
           <Headband
             cover={coverurl}
