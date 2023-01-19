@@ -10,7 +10,7 @@ import React from 'react';
             alt="profile-banner"
             className="object-cover h-48 w-full"
           />
-          <div className="flex left-4 top-28 ">
+          <div className="flex ">
             <img
               src={profile}
               alt="profile-image"

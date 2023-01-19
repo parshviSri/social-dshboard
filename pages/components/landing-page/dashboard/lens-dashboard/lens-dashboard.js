@@ -13,7 +13,7 @@ import {useSelector} from 'react-redux';
 
   
     return (
-      <div className="w-full h-full">
+      <div >
         <div className='m-2'>
           <Headband
             cover={coverurl}
